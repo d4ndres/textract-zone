@@ -24,7 +24,7 @@ const onLoad = async (data) => {
   const base64 = await convertirBase64(data);
   
   loading.value = true
-  fetch('http://localhost:8080/api/extract_text', {
+  fetch('https://471d-191-156-190-112.ngrok-free.app/api/extract_text', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
