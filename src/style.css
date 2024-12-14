@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: 244 242 238;
+  --color-bg-overflow: 255 255 255;
+  --color-text-main: 0 0 0;
+  --color-text-active: 0 0 0;
+  --color-border: 217 218 221;
+  --color-bg-active: 144 192 244;
+  background-color: rgb(var(--color-bg));
+}
+
+:root.dark {
+  --color-bg: 22 31 39;
+  --color-bg-overflow: 32 43 56;
+  --color-text-main: 219 219 219;
+  --color-text-active: 255 255 255;
+  --color-border: 142 142 142;
+  --color-bg-active: 144 192 244;
+}
+
+
+@layer base {
+  :root {
+    --color-bg: var(--color-bg);
+    --color-bg-overflow: var(--color-bg-overflow);
+    --color-text-main: var(--color-text-main);
+    --color-border: var(--color-border);
+    --color-text-active: var(--color-text-active);
+    --color-bg-active: var(--color-bg-active);
+  }
+}
